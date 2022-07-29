@@ -1,0 +1,95 @@
+form{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background: black;
+    padding: 0.25rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+    
+    
+/*    backdrop-filter: blur(10px);*/
+}
+.contenedor_form{
+    width: 60%;
+    display: flex;
+    background: black;
+    padding: 0.25rem;
+    position: fixed;
+}
+
+
+/*
+ width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+*/
+body{
+    display: flex;
+    flex-direction: column;
+    background:url(../img/fondo.jpg) 
+    no-repeat fixed center center;
+    background-size: cover;
+    flex-direction: row column;
+}
+
+.contenedor_chat{
+    margin: 0 auto;
+/*    border: 1px solid blue;*/
+    align-items: center;
+    width: 60%;
+}
+/*
+
+.contenedor_form{
+    margin: 0 auto;
+    border: 1px solid blue;
+    align-items: center;
+    width: 60%;
+}
+*/
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+nth-child(odd)
+Las pseudo-clases de CSS nos dan múltiples opciones para ajustar la maquetación web al diseño. 
+nos permite seleccionar varios elementos hijos de la clase indicando su posición, según un argumento o fórmula.
+Es decir, si tenemos por ejemplo una lista <ul> y queremos modificar el color sólo para el 3er elemento
+*/
+
+ul>li{
+    padding: 0.5rem 1rem;
+}
+
+ul>li:nth-child(odd){
+    margin: 5px;
+    border-radius: 10px 10px 0px 10px;
+    background: #3eaace;
+    text-align: right;
+    font-style: italic;
+    font-weight: 600;
+}
+ul>li:nth-child(even){
+    margin: 5px;
+    border-radius: 10px 10px 10px 0px;
+    background: white;
+    text-align: left;
+    font-style: italic;
+    font-weight: 600;
+}
